@@ -15,4 +15,20 @@ export class AppComponent {
   innerText="This value is coming from component"
   isDisabled = true;
   url="https://angular.io/cli"
+
+  eventBinding ="Event Binding"
+  counter= 0;
+  clickMe(){
+    this.counter ++
+    console.log(`you clicked me ${this.counter} times`)
+  }
+
+  twoWayDataBinding = "Two Way Data Binding"
+  fName="Tuan"
+  lName="Bui"
+
+  getFullName(){
+    console.log(this.fName + ' ' + this.lName )
+    return this.fName + ' ' + this.lName
+  }
 }
