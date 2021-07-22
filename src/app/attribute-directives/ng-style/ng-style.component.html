@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Using NgStyle Attribute</h1>
+    <div [ngStyle]="{'color': 'red', 'font-size': '30px'}">
+        This is using ngStyle
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <h1>Using NgStyle Attribute using Dynamic String</h1>
+    <div [ngStyle]="{'color': textColor, 'font-size': textFont}">
+        This is using ngStyle
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <h1>Using NgStyle Attribute using ternary operator</h1>
+    <div [ngStyle]="{'color': status==='error'? textColor : 'blue', 'font-size': textFont}">
+        This is using ngStyle
+    </div>
+</div>
