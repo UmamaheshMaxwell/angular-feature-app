@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Parent Component</h2>
+    <p>
+        Current Count is {{child.count}}
+    </p>
+    <br>
+    <app-child-two #child></app-child-two> <br>
+    <button class="btn btn-primary" (click)="child.increment()">Increment</button>&nbsp;&nbsp;
+    <button class="btn btn-primary"(click)="child.decrement()">Decrement</button>&nbsp;&nbsp;
+</div>
