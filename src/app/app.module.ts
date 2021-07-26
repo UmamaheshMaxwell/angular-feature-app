@@ -13,8 +13,9 @@ import { NgClassComponent } from './attribute-directives/ng-class/ng-class.compo
 import { NgStyleComponent } from './attribute-directives/ng-style/ng-style.component';
 import { CustomDirective } from './directives/custom.directive';
 import { EmojiDirective } from './directives/emoji.directive';
-import { CustomPipe } from './pipes/custom.pipe';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { MoneyPipe } from './pipes/money.pipe';
+import { GenderPipe } from './pipes/gender.pipe';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,9 @@ import { PipeComponent } from './components/pipe/pipe.component';
     NgStyleComponent,
     CustomDirective,
     EmojiDirective,
-    CustomPipe,
-    PipeComponent
+    PipeComponent,
+    MoneyPipe,
+    GenderPipe
   ],
   imports: [
     BrowserModule,
