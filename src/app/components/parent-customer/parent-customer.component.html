@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>{{title}}</h2>
+    <p>
+        Message: <input type="text" class="form-control w-50" [(ngModel)]="message">
+    </p>
+    <p>
+        Code: <input type="text" class="form-control w-50" [(ngModel)]="code">
+    </p>
+    <p>
+        Name: <input type="text" class="form-control w-50" [(ngModel)]="name">
+    </p>
+    <app-child-customer [message]="message" [customer]="customer"></app-child-customer>
+    <p>
+        <button class="btn btn-primary" (click)="updateCustomer()" >Update</button>
+    </p>
+</div>

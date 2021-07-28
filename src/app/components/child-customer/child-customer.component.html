@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Child Component</h2>
+    <p>Message <strong><i>{{message}}</i></strong></p>
+    <p>
+        Customer Code: <strong><i>{{this.customer.code}}</i></strong>
+    </p>
+    <p>
+        Customer Name: <strong><i>{{this.customer.name}}</i></strong>
+    </p>
+    <p>Do Check Count {{doCheckCount}}</p>
+    <ul>
+        <li *ngFor="let log of changeLog">{{log}}</li>
+    </ul>
+</div>
