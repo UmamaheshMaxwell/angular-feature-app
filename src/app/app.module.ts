@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentComponent } from './components/student/student.component';
@@ -31,6 +32,8 @@ import { ParentCustomerComponent } from './components/parent-customer/parent-cus
 import { ChildCustomerComponent } from './components/child-customer/child-customer.component';
 import { ChildDestroyComponent } from './components/child-destroy/child-destroy.component';
 import { ParentDestroyComponent } from './components/parent-destroy/parent-destroy.component';
+import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -61,13 +64,17 @@ import { ParentDestroyComponent } from './components/parent-destroy/parent-destr
     ParentCustomerComponent,
     ChildCustomerComponent,
     ChildDestroyComponent,
-    ParentDestroyComponent
+    ParentDestroyComponent,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
