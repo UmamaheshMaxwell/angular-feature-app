@@ -34,6 +34,9 @@ import { ChildDestroyComponent } from './components/child-destroy/child-destroy.
 import { ParentDestroyComponent } from './components/parent-destroy/parent-destroy.component';
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,10 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
     ChildDestroyComponent,
     ParentDestroyComponent,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ProductListComponent,
+    TodoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
