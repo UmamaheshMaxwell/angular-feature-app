@@ -37,6 +37,10 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { UserComponent } from './components/user/user.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ErrorComponent } from './components/error/error.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +76,11 @@ import { UserComponent } from './components/user/user.component';
     ReactiveFormComponent,
     ProductListComponent,
     TodoComponent,
-    UserComponent
+    UserComponent,
+    HomeComponent,
+    ContactComponent,
+    ErrorComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
