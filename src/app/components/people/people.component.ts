@@ -9,6 +9,7 @@ import { PeopleService } from 'src/app/services/people.service';
 })
 export class PeopleComponent implements OnInit {
   people: People[] = [];
+  students: any;
 
   constructor(private peopleService: PeopleService) { }
 
@@ -23,7 +24,7 @@ export class PeopleComponent implements OnInit {
   }
 
   addPeople(){
-    let data = {"id" : 8, "name": "xxx"}
+    let data = {"id" : 9, "name": "RANDOM"}
     this.peopleService.addPeople(data).subscribe(data => {
       console.log(data)
       this.getPeople()
@@ -31,7 +32,7 @@ export class PeopleComponent implements OnInit {
   }
 
   editPeople(){
-    let data = {"id" : 6, "name": "Tuan"}
+    let data = {"id" : 6, "name": "JohnGalt"}
     this.peopleService.editPeople(data).subscribe(data => {
       console.log(data)
       this.getPeople()
@@ -42,6 +43,15 @@ export class PeopleComponent implements OnInit {
     this.peopleService.deletePeople(8).subscribe(data => {
       console.log(data)
       this.getPeople()
+    })
+  }
+
+  getStudents(){
+    this.peopleService.getStudents().subscribe(data => {
+      console.log(data)
+      let studentInfo: any = data;
+      console.log(studentInfo['students'])
+      this.students = studentInfo['students'] 
     })
   }
 
